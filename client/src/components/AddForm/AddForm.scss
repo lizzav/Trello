@@ -1,0 +1,30 @@
+.add-form{
+
+  border-radius: 3px;
+  //padding: 12px;
+  &__input{
+    background-color: #dfe3e6;
+    margin-top: 12px;
+    textarea{
+      border: 0;
+      padding: 0;
+      margin:0;
+      width: 100%;
+      resize: none;
+      cursor: text;
+    }
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.clear-button svg{
+  height: 13px;
+  width: 13px;
+  transform:rotate(45deg);
+  fill:#6b808c;
+  cursor: pointer;
+}

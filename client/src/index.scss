@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: green;
+    font-size: 14px;
+}
+*{
+    outline: none;
+    font-family: 'Roboto',-apple-system, BlinkMacSystemFont,
+    sans-serif;
+}
+#root{
+    padding: 20px;
+}
+.App{
+    display: flex;
+}
