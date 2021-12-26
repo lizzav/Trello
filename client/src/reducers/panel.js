@@ -4,18 +4,18 @@ const initialState = {
       id: 1,
       title: "PLAN 1",
       cards: [
-        { id: 1, text: "1234" },
-        { id: 2, text: "1234" },
-        { id: 3, text: "3221234" }
+        { id: 1, text: "1234",src:"https://img.fonwall.ru/o/ij/bereg-morya-skala-derevya-les.jpg?route=mid&amp;h=750"  },
+        { id: 2, text: "1234",src:"https://img.fonwall.ru/o/ij/bereg-morya-skala-derevya-les.jpg?route=mid&amp;h=750"  },
+        { id: 3, text: "3221234",src:"https://img.fonwall.ru/o/ij/bereg-morya-skala-derevya-les.jpg?route=mid&amp;h=750"  }
       ]
     },
     {
       id: 2,
       title: "PLAN 2",
       cards: [
-        { id: 4, text: "1234" },
-        { id: 5, text: "1234" },
-        { id: 6, text: "3221234" }
+        { id: 4, text: "1234",src:"https://img.fonwall.ru/o/ij/bereg-morya-skala-derevya-les.jpg?route=mid&amp;h=750" },
+        { id: 5, text: "1234", src:"https://img.fonwall.ru/o/ij/bereg-morya-skala-derevya-les.jpg?route=mid&amp;h=750" },
+        { id: 6, text: "3221234", src:"https://img.fonwall.ru/o/ij/bereg-morya-skala-derevya-les.jpg?route=mid&amp;h=750" }
       ]
     }
   ],
@@ -36,8 +36,9 @@ export default (state = initialState, action) => {
                 ...item.cards,
                 {
                   id: Math.floor(Math.random() * 100000),
-                  text: action.text
-                }
+                  text: action.text,
+                src:"https://img.fonwall.ru/o/ij/bereg-morya-skala-derevya-les.jpg?route=mid&amp;h=750"
+          }
               ]
             };
           } else {

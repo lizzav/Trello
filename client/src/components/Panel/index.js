@@ -44,7 +44,7 @@ const Panel = ({
                 draggable={true}
                 onDragStart={e => dragStartHandler(e, el.id, id)}
               >
-                <Card key={index}>{el.text}</Card>
+                <Card key={index}>{el.text}<img src={el.src }/></Card>
               </div>
             ))}
           </div>

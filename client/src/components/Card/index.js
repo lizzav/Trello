@@ -1,10 +1,12 @@
-import React from "react";
+import React, {memo, useMemo} from "react";
 import PropTypes from "prop-types";
 
 import "./Card.scss";
 
 const Card = ({ children }) => {
-  return <div className="card">{children}</div>;
+  // console.log("card change")
+  // return useMemo(() => <div className="card">{children}</div>, [children]);
+  return <div className="card">{children}</div>
 };
 
 Card.propTypes = {
@@ -12,3 +14,4 @@ Card.propTypes = {
 };
 
 export default Card;
+// export const Card=memo(CardInner);

@@ -13,7 +13,11 @@ const AddForm = ({ children, isEmptyPanel, addCard, panelId, addPanel }) => {
       textareaRef.current.focus();
     }
   }, [showForm]);
-
+  useEffect(() => {
+    if (textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  }, [showForm]);
   const addCardFunction = () => {
     addCard(panelId, textareaValue);
     setTextareaValue("");
